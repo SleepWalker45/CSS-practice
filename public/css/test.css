@@ -1,0 +1,21 @@
+.page {
+  padding: 20px;
+}
+
+.cards {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  box-shadow: 8px 8px 10px 0 #ff1492, -5px -5px 5px 0 #00f,
+    5px 5px 15px 0 #ff0;
+  margin-bottom: 20px;
+}
+
+.card_list {
+  columns: 2 400px;
+  display: inline-block;
+  column-rule: thin solid blue;
+}
+
+.card_descript {
+  column-span: none;
+}

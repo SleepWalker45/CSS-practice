@@ -19,6 +19,8 @@
       {{> hero title=hero.title text=hero.text}}
     </div>
 
+    <h1 class="my_test"> Hello my name is Roman</h1>
+
     <div class="page_block">
       <main class="row g-0 plans">
         {{#each plans}}
@@ -27,6 +29,23 @@
         </div>
         {{/each}}
       </main>
+    </div>
+
+    <div class="page_block">
+      <div>
+        <table class="table">
+          <caption>My Table</caption>
+          <tbody>
+            {{#each footer}}
+              <tr>
+                {{#each links}}
+                <td>{{text}}</td>
+                {{/each}}
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="page_block">

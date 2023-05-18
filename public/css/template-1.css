@@ -146,3 +146,60 @@
 .plans_card:not(:last-of-type) {
   margin-right: 24px;
 }
+
+.hero_text {
+  background-image: url('/img/test2.jpg');
+  background-attachment: scroll;
+  overflow: auto;
+  height: 100px;
+  color: white;
+}
+
+.my_test {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  padding: 50px;
+  color: black;
+
+  height: 300px;
+  border: 5px solid transparent;
+  align-items: center;
+  justify-content: center;
+
+  /* background-image: url('/img/test2.jpg'); */
+  border-image-source: url('/img/test2.jpg');
+  border-image-width: 10%;
+  border-image-slice: 10%;
+  border-image-outset: 5px;
+}
+
+.card_block {
+  list-style-type: disc;
+  list-style-position: inside;
+
+  padding: 0;
+}
+
+.card_description_item {
+  display: list-item;
+  text-align: left;
+}
+
+.table tr {
+  border: 1px solid #343a40;
+}
+
+.table tr td {
+  border: 1px solid #343a40;
+
+  border-bottom-color: red;
+  border-right-color: green;
+}
+
+.table {
+  table-layout: auto;
+  border-collapse: unset;
+  border-spacing: 12px;
+  caption-side: top;
+}
