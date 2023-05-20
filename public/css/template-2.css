@@ -278,3 +278,10 @@
 .link_item:hover {
   text-decoration: underline;
 }
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+}
