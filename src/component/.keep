@@ -1,0 +1,9 @@
+/* Текст * {
+  color: ;
+  -webkit-text-fill-color: ;
+  -webkit-text-stroke: ;
+  direction: ltr/rtl; - направление текста
+  writing-mode: horizontal-tb/vertical-rl/vertical-lr; - ориентация текста
+  text-align: left/right/center; - выравнивания текста по горизонтали
+
+} */
