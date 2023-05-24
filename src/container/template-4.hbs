@@ -10,7 +10,36 @@
     </nav>
 </header>
 
+{{#with main}}
+<div class="main">
+    <img src="{{image}}" alt="Image" class="main_image">
+    <div class="main_content">
+        <h1 class="main_content_title">{{heading}}</h1>
+        <p class="main_content_text">{{descriotion}}</p>
+        <button href="{{href}}" class="main_content_button">{{button}}</button>
+    </div>
+</div>
+{{/with}}
 
+<div class="featured">
+{{#each featured}}
+    <div class="featured_card">
+        <img src="{{photo}}" alt="Photo" class="featured_image">
+        <h1 class="featured_title">{{heading}}</h1>
+        <p class="featured_info">{{info}}</p>
+        <a href="{{linkUrl}}" class="featured_link">{{linkText}}</a>
+    </div>
+{{/each}}
+</div>
+
+<div class="actions">
+    {{#each actions}}
+    <div class="actions_form">
+        <h1 class="actions_form_title">{{heading}}</h1>
+        <button href="{{url}}" class="actions_form_button">{{text}}</button>
+    </div>
+    {{/each}}
+</div>
 
 <footer class="">
     <div class="footer row g-0">
@@ -18,7 +47,7 @@
             {{> logo}}
             <span class="footer_copyright">Copyright 2023</span>
         </div>
-
+        
         {{#each footer}}
             <div class="col-3">
                 <span class="footer_title">{{title}}</span>
