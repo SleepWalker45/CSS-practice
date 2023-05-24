@@ -1,0 +1,29 @@
+<header class='header g-0'>
+    <div >
+        {{> logo}}
+    </div>
+
+    <nav class='header_nav'>
+        <div class="header_nav_right">
+        {{> nav list=header}}
+        </div>
+    </nav>
+</header>
+
+
+
+<footer class="">
+    <div class="footer row g-0">
+        <div class="col-3">
+            {{> logo}}
+            <span class="footer_copyright">Copyright 2023</span>
+        </div>
+
+        {{#each footer}}
+            <div class="col-3">
+                <span class="footer_title">{{title}}</span>
+                {{> nav list=links isVertical=true}}
+            </div>
+        {{/each}}
+    </div>
+</footer>
