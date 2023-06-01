@@ -1,0 +1,55 @@
+{{> tempHeader}}
+
+<main class="main">
+    {{#with messages}}
+    <div class="messages">
+        <div class="message_item">
+            <h1 class="message_header">{{title}}</h1>
+        </div>
+
+        {{#each list}}
+        <div class="message_item">
+            <div class="message_name-day">
+                <div class="message_name">{{name}}</div>
+                <div class="message_day">{{day}}</div>
+            </div>
+            <p class="message_text">{{message}}</p>
+        </div>
+        {{/each}}
+
+        <a href="#" class="message_link">All messages</a>
+    </div>
+    {{/with}}
+
+    {{#with form}}
+    <div class="form">
+        <div class="form_item form_title">
+            <div>{{title}}</div>
+        </div>
+        {{#each inputs}}
+            <input id="{{id}}" type="{{type}}" placeholder="{{placeholder}}" class="form_item_inputs form_inputs">{{emailAddress}}</input>
+        {{/each}}
+        <div class="form_item form_checkbox">
+            <input name="{{checkbox.name}}" type="checkbox" class="">
+            <label for="{{checkbox.name}}">{{checkbox.label}}</label>
+        </div>
+
+        <button class="form_item form_button">{{button}}</button>
+
+        <p class="form_item form_description">{{info}}</p>
+    </div>
+    {{/with}}
+</main>
+
+{{!-- advantages --}}
+<div class="advantages">
+    {{#each advantages}}
+        <div class="advantages_item">
+            <div class="advantages_title">{{title}}</div>
+            <p class="advantages_text">{{text}}</p>
+        </div>
+    {{/each}}
+</div>
+{{!-- /advantages --}}
+
+{{> tempFooter}}

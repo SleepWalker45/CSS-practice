@@ -1,0 +1,63 @@
+{{> tempHeader}}
+
+<div class="main">
+    <div class="info">
+        <div class="info_title">{{info.title}}</div>
+        <p class="info_description">{{info.description}}</p>
+    </div>
+    {{#with form}}
+        <div class="form">
+            {{#each inputs}}
+            <input id="{{id}}" placeholder="{{placeholder}}" type="{{type}}" class="form_item form_item_input">
+            {{/each}}
+
+            <div class="form_item form_checkbox">
+                <input name="{{checkbox.name}}" type="checkbox" class="">
+                <label for="{{checkbox.name}}">{{checkbox.label}}</label>
+            </div>
+
+            <button class="form_item form_button">{{button}}</button>
+
+            <div class="form_item divider"></div>
+
+            <p class="form_item form_description">{{info}}</p>
+        </div>
+    {{/with}}
+</div>
+
+{{#with updates}}
+<div class="updates">
+    <div class="updates_title">{{title}}</div>
+
+    {{#each list}}
+    <div class="updates_list">
+        <img src="https://picsum.photos/32/32" alt="" class="updates_image">
+        <div>
+            <div class="updates_nickname">@{{nickname}}</div>
+            <p class="updates_description">{{description}}</p>
+        </div>
+    </div>
+    {{/each}}
+
+    <a href="{{show_all.url}}" class="updates_show_all">{{show_all.text}}</a>
+</div>
+{{/with}}
+
+{{#with expirience}}
+<div class="expirience">
+    <div class="expirience_title">{{title}}</div>
+
+    <div class="expirience_badge">{{badge}}</div>
+
+    <div class="expirience_list">
+        {{#each list}}
+        <div class="expirience_list_item">
+            <div class="name">{{name}}</div>
+            <p class="details">{{details}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
+{{/with}}
+
+{{> tempFooter}}

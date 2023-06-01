@@ -1,0 +1,302 @@
+/* =========== */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.page {
+  background: #ffffff;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.page_content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.header {
+  padding: 25px;
+  border-bottom: 1px solid #dee2e6;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer {
+  padding: 25px 0;
+  border-top: 1px solid #dee2e6;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  color: white;
+  background: #3d6be9;
+  padding: 8px;
+  border-radius: 30%;
+
+  width: 24px;
+  height: 24px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav_inLine {
+  gap: 24px;
+}
+
+.nav_vertical {
+  gap: 12px;
+  flex-direction: column;
+}
+
+.nav_link {
+  color: #6c757d;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 100%;
+}
+
+.nav_link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.page_block:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.footer_copyright {
+  font-size: 12.8px;
+  color: #6c757d;
+  display: block;
+  margin-top: 12px;
+}
+
+.footer_title {
+  font-size: 20px;
+  color: #212529;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* ===================================== */
+
+.main {
+  display: flex;
+  gap: 40px;
+}
+
+.messages {
+  display: flex;
+  flex-grow: 3;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  height: fit-content;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.message_item {
+  border-bottom: 1px solid #d3dee9;
+  padding-bottom: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message_header {
+  display: flex;
+  justify-content: left;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 19px;
+
+  color: #212529;
+}
+
+.message_name-day {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.message_name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #212529;
+}
+
+.message_day {
+  width: 32px;
+  height: 18px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #6c757d;
+}
+
+.message_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #212529;
+}
+
+.message_link {
+  display: flex;
+  justify-content: right;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #007bff;
+}
+
+/* ======================== */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  flex-grow: 1;
+
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+.form_title {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #212529;
+}
+
+.form_item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form_item_inputs {
+  margin-bottom: 12px;
+}
+
+.form .form_inputs {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background: #ffffff;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+
+  padding: 16px;
+  gap: 12px;
+}
+
+.form_checkbox {
+  display: flex;
+  justify-content: start;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #212529;
+}
+
+.form_checkbox label {
+  padding-left: 8px;
+}
+
+.form_checkbox input {
+  cursor: pointer;
+}
+
+.form_button {
+  display: flex;
+  justify-content: center;
+
+  padding: 8px;
+  color: white;
+  background: #0d6efd;
+  border: 1px solid #0d6efd;
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form_description {
+  display: flex;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #6c757d;
+}
+
+/* ============================ */
+
+.advantages {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.advantages_item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33%;
+  gap: 10px;
+
+  padding: 22px;
+  border: 1px solid #e4eaf2;
+  border-radius: 12px;
+}
+
+.advantages_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+
+  color: #212529;
+}
+
+.advantages_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #767676;
+}
