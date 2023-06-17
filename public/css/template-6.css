@@ -96,8 +96,8 @@ body {
 /* ===================================== */
 
 .main {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   gap: 20px;
 }
 
